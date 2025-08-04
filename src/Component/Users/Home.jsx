@@ -3,7 +3,7 @@ import { BiSearch } from 'react-icons/bi';
 import { FaCar, FaDollarSign, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa6';
 import { FiUser } from 'react-icons/fi';
 import { useNavigate, Link, Outlet, useLocation } from 'react-router-dom'
-import Logo from './Img/Logo.png';
+import Logo from './Img/Logo.png.png';
 import Home3 from './Img/Home-3.webp'
 import './App.css';
 import Aos from 'aos';

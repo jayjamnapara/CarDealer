@@ -5,7 +5,7 @@ import { FaCarSide } from 'react-icons/fa6'
 import { MdDashboard } from 'react-icons/md'
 import { BiCar, BiUserCircle } from 'react-icons/bi'
 import axios from 'axios';
-import Logo from './Img/Logo.png'
+import Logo from './Img/Logo.png.png'
 import { FiUser } from 'react-icons/fi'
 
 const Dashboard = () => {

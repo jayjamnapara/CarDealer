@@ -10,7 +10,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { BsShieldCheck } from 'react-icons/bs';
 import { GiPriceTag } from 'react-icons/gi';
-import axios from 'axios'
+import axios from 'axios';
 
 const Home = ({ CarData }) => {
   const [search, setSearch] = useState('')
@@ -192,6 +192,7 @@ const Home = ({ CarData }) => {
               <button className='block text-white text-lg hover:text-red-700' onClick={() => handleMenuClick('/home')}>Home</button>
               <button className='block text-white text-lg hover:text-red-700' onClick={() => handleMenuClick('about')}>About</button>
               <button className='block text-white text-lg hover:text-red-700' onClick={() => handleMenuClick('contact')}>Contact</button>
+              <button className='block text-white text-lg hover:text-red-700' onClick={() => handleMenuClick('carcollection')}>Collection</button>
 
               <div className='flex items-center space-x-3'>
                 <div className='flex relative w-full bg-white rounded-lg items-center'>

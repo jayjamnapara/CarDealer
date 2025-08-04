@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import About1 from './Img/Home-1.AVIF';
+import About1 from './Img/Home-1.jpg';
 import About2 from './Img/Home-2.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';

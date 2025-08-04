@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { FiTrash } from 'react-icons/fi';
+import { FiPhoneCall, FiTrash } from 'react-icons/fi';
 import { useNavigate } from 'react-router-dom';
 
 const MyCars = () => {
@@ -82,15 +82,29 @@ const MyCars = () => {
                 </div>
               </div>
 
-              {/* delete button */}
-              <button onClick={() => { deleteData(CarItem.id) }}
-                className='py-3 px-6 mt-5 flex justify-center mx-auto rounded-full border-2 border-rose-800
-                hover:bg-gradient-to-bl hover:from-rose-500 hover:via-red-800 to-rose-500 transition-all duration-300'>
-                <span
-                  className='hover:scale-105 flex items-center gap-2 transition-all duration-300'>
-                  <FiTrash className='transition-all duration-300' /> Delete
-                </span>
-              </button>
+              {/* button */}
+              <div className='flex justify-center'>
+                <button onClick={() => { deleteData(CarItem.id) }}
+                  className='py-3 px-6 mt-5 flex justify-center mx-auto rounded-full border-2 border-rose-800
+                hover:bg-gradient-to-bl hover:from-rose-500 hover:via-red-800 to-rose-500 transition-all duration-300'
+                  data-aos="fade-up" data-aos-delay='300'>
+                  <span
+                    className='hover:scale-105 flex items-center gap-2 transition-all duration-300'>
+                    <FiTrash className='transition-all duration-300' /> 
+                    <span className='hidden lg:block md:block'>Delete</span>
+                  </span>
+                </button>
+                <button
+                  className='py-3 px-6 mt-5 flex justify-center mx-auto rounded-full border-2 border-green-800
+                hover:bg-gradient-to-bl hover:from-green-500 hover:via-green-800 to-green-500 transition-all duration-300'
+                  data-aos="fade-up" data-aos-delay='300'>
+                  <span
+                    className='hover:scale-105 flex items-center gap-2 transition-all duration-300'>
+                    <FiPhoneCall className='transition-all duration-300' /> 
+                    <span className='hidden lg:block md:block'>Contact</span>
+                  </span>
+                </button>
+              </div>
             </div>
           ))
         }
